@@ -24,4 +24,4 @@ yarn-error.log*
 
 
 # Ignore the Profile.jpg image
-/src/resources/Profile.jpg
+/resources/Profile.jpg
