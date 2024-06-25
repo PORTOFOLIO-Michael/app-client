@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# Ignore the Profile.jpg image
+/src/resources/Profile.jpg
