@@ -2,8 +2,6 @@ import React from "react";
 import profile from '../../resources/Profile.jpg'
 
 
-
-
 function HomePage() {
     return (
         <div>
