@@ -6,15 +6,19 @@ import loading_gif from '../../resources/Loading_gif.gif'
 import './header.css'
 
 interface Info {
-    header: {
-        title: string,
-        name: string,
+    homepage: {
+        header: {
+            title: string,
+            name: string,
+            summary: string,
+            resume: string,
+        };
+        socials: {
+            github: string,
+            linkedin: string,
+            email: string,
+        };
     };
-
-    socials: {
-        github: string,
-        linkedin: string,
-    }
 }
 
 function Header() {
@@ -27,6 +31,8 @@ function Header() {
             .catch(error => console.error("There was error fetching the DATA: ", error));
     }, []);
 
+    console.log(info);
+
     if (!info) {
         return (
             <div>
@@ -38,19 +44,31 @@ function Header() {
     return (
         <div className="header">
             <span className="header_line"  >
-                {info.header.title} <br />
-                {info.header.name}
+                {info.homepage.header.title} <br />
+                {info.homepage.header.name}
             </span>
+            <p>
+                {info.homepage.header.summary}
+            </p>
+
             <img src={profile} className="profile_image" alt="logo" />
+
+            <button className="download_button">
+                <a href={info.homepage.header.resume}
+                    target="_blank" rel="noopener noreferrer"
+                    download="Michael-Hohashvili-Resume.pdf">
+                    Download Resume
+                </a>
+            </button>
+
             <h1>
                 <div className="socials_container">
-                    <a href={info.socials.linkedin} target="_blank"
+                    <a href={info.homepage.socials.linkedin} target="_blank"
                         rel="noopener noreferrer">Linkedin</a>
                     <br />
-                    <a href={info.socials.github} target="_blank"
+                    <a href={info.homepage.socials.github} target="_blank"
                         rel="noopener noreferrer">Github</a>
                 </div>
-
             </h1>
         </div>
 

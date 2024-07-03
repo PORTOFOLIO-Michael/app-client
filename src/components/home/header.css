@@ -1,17 +1,18 @@
 .header {
     position: relative;
     margin-top: 6vw;
-    /* padding: 1%; */
+    
     width: 100vw;
     height: 100vh;
-    /* background-color: black; */
 }
 
 .profile_image {
-    width: 18vw;
-    
-    margin-top: 8vh;
-    
+    position: absolute;
+    z-index: 1;
+    width: 15vw;
+
+    margin-top: 4vh;
+
     border-radius: 1em;
     box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
     float: right;
@@ -23,15 +24,19 @@
     transform: rotate(0deg);
 }
 
-.header_line {
-    position: absolute;
+.download_button {
+    position: relative;
+    /* z-index: 1; */
+    top: 30vh;
+    right: 35vw;
+}
 
-    color: #27272a;;
+.header_line {
+    color: #27272a;
+
     float: left;
 
     text-align: left;
-
-    white-space: pre-line;
 
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -39,17 +44,27 @@
     font-size: calc(1vh + 1.3vw);
     display: flex;
 
-    /* letter-spacing: 2px; */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-
     transition: 0.5s;
 }
 
 .header_line:hover {
     font-size: calc(1vh + 1.4vw);
-
 }
 
+.header p {
+    position: relative;
+    color: #65656d;
+
+    font-size: "Heebo", sans-serif;
+
+    text-align: left;
+    float: left;
+}
+
+.header p, span {
+    position: relative;
+    white-space: pre-line;
+}
 
 .socials_container {
     position: absolute;

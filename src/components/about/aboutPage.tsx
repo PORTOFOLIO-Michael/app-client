@@ -5,9 +5,11 @@ import loading_gif from '../../resources/Loading_gif.gif'
 
 interface Info {
     about: {
-        title: string,
-        skils: string,
-        hobbies: string
+        header: {
+            title: string,
+            skils: string,
+            hobbies: string
+        }
     }
 }
 
@@ -33,13 +35,13 @@ function AboutPage() {
         <div className="main_about">
             <div>
                 <h1>
-                    {info.about.title}
+                    {info.about.header.title}
                 </h1>
             </div>
             <body>
                 <span>
-                    {info.about.skils} <br />
-                    {info.about.hobbies}
+                    {info.about.header.skils} <br />
+                    {info.about.header.hobbies}
                 </span>
             </body>
         </div>
