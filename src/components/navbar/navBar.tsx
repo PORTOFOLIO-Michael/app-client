@@ -19,6 +19,9 @@ function NavBar() {
                         <li>
                             <Link to="/about">About</Link>
                         </li>
+                        <li>
+                            <Link to="/about">Hawk Tu</Link>
+                        </li>
                     </ul>
                 </div>
             </nav>
