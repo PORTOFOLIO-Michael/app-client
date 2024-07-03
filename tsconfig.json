@@ -1,11 +1,6 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
-    "paths": {
-      "crypto": [
-        "node_modules/crypto-js"
-      ]
-    },
     "target": "es5",
     "lib": [
       "dom",
@@ -27,7 +22,6 @@
     "jsx": "preserve"
   },
   "include": [
-    "src",
-    "declarations.d.ts" // Add your declaration file here if necessary
+    "src"
   ]
 }
