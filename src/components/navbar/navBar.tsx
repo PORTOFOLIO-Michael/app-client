@@ -20,7 +20,7 @@ function NavBar() {
                             <Link to="/about">About</Link>
                         </li>
                         <li>
-                            <Link to="/about">Hawk Tu</Link>
+                            <Link to="/about">Soon...</Link>
                         </li>
                     </ul>
                 </div>
