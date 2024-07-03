@@ -6,7 +6,7 @@ import './navBar.css'
 
 function NavBar() {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     return (
         <div className="navbar_container">

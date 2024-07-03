@@ -1,5 +1,4 @@
 import React from "react";
-import profile from '../../resources/Profile.jpg'
 import Header from "./header";
 
 import './homePage.css'
