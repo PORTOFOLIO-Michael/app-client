@@ -1,17 +1,16 @@
 {
-    "header": {
-      "title": "Hello, Welcome to my portfolio",
-      "name": "My name is Michael",
-      "email": "michael1hoha@gmail.com"
-    },
-    "socials": {
-      "github": "https://github.com/MichaelHoha",
-      "linkedin": "https://www.linkedin.com/in/michael-hohashvili/"
-    },
-    "about": {
-      "title": "Hi, This is the bout page",
-      "skils": "Here is my skils: React, Redux, etc",
-      "hobbies": "Here some of my hobbies: PC Games, Netflix, Friends etc"
-    }
+  "header": {
+    "title": "Hi there 👋🏻, Welcome to my portfolio.",
+    "name": "My name is Michael\n I'm a Front-end developer,\n and addicted gamer.",
+    "email": "michael1hoha@gmail.com"
+  },
+  "socials": {
+    "github": "https://github.com/MichaelHoha",
+    "linkedin": "https://www.linkedin.com/in/michael-hohashvili/"
+  },
+  "about": {
+    "title": "Hi, This is the bout page",
+    "skils": "Here is my skils: React, Redux, etc",
+    "hobbies": "Here some of my hobbies: PC Games, Netflix, Friends etc"
   }
-  
+}

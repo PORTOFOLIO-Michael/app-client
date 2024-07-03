@@ -1,35 +1,54 @@
 .header {
     position: relative;
-    /* margin-top: 4%; */
+    margin-top: 6vw;
     /* padding: 1%; */
     width: 100vw;
+    height: 100vh;
+    /* background-color: black; */
 }
 
 .profile_image {
     height: 30vh;
+    width: 18vw;
+    
+    margin-top: 8vh;
+    
     border-radius: 1em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
     float: right;
-    transform: rotate(10deg); 
+    transform: rotate(10deg);
+    transition: 0.5s;
+}
+
+.profile_image:hover {
+    transform: rotate(0deg);
 }
 
 .header_line {
-    background-color: #333;
-    color: #fff;
-    /* padding: 20px 40px; */
+    position: absolute;
 
+    color: #27272a;;
     float: left;
 
-    font-family: 'Arial', sans-serif;
+    text-align: left;
 
-    font-size: calc(1vh + 1vw);
-    font-weight: bold;
+    white-space: pre-line;
 
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid #ff6347;
+    font-size: calc(1vh + 1.3vw);
+    display: flex;
+
+    /* letter-spacing: 2px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+
+    transition: 0.5s;
+}
+
+.header_line:hover {
+    font-size: calc(1vh + 1.4vw);
+
 }
 
 

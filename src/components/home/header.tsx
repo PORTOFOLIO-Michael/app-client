@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import profile from '../../resources/Profile.jpg'
+import profile from '../../resources/Frontend-developer-logo.png'
 
 import './header.css'
 
@@ -22,7 +22,7 @@ function Header() {
         fetch('./info.json')
             .then(response => response.json())
             .then(data => setInfo(data))
-            .catch(error => console.error('Error fetching data:', error));
+            .catch(error => console.error("There was error fetching the DATA: ", error));
     }, []);
 
     if (!info) {
@@ -31,11 +31,11 @@ function Header() {
 
     return (
         <div className="header">
-            <span className="header_line">
-                {info.header.title}
+            <span className="header_line"  >
+                {info.header.title} <br />
+                {info.header.name}
             </span>
             <img src={profile} className="profile_image" alt="logo" />
-            
             <h1>
                 <div className="socials_container">
                     <a href={info.socials.linkedin} target="_blank"
