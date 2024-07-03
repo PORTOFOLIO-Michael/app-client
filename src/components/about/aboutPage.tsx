@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import loading_gif from '../../resources/Loading_gif.gif'
 
 // import './mainRouter.css'
 
@@ -21,18 +22,26 @@ function AboutPage() {
     }, []);
 
     if (!info) {
-        return <div>Loading...</div>;
+        return (
+            <div>
+                <img src={loading_gif} alt="" />
+            </div >
+        )
     }
 
     return (
         <div className="main_about">
-            <h1>
-                {info.about.title}
-            </h1>
-            <span>
-                {info.about.skils} <br />
-                {info.about.hobbies}
-            </span>
+            <div>
+                <h1>
+                    {info.about.title}
+                </h1>
+            </div>
+            <body>
+                <span>
+                    {info.about.skils} <br />
+                    {info.about.hobbies}
+                </span>
+            </body>
         </div>
     )
 }

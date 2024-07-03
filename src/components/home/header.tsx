@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react"
 import profile from '../../resources/Frontend-developer-logo.png'
+import loading_gif from '../../resources/Loading_gif.gif'
+
 
 import './header.css'
 
@@ -26,7 +28,11 @@ function Header() {
     }, []);
 
     if (!info) {
-        return <div>Loading...</div>;
+        return (
+            <div>
+                <img src={loading_gif} alt="" />
+            </div >
+        )
     }
 
     return (
