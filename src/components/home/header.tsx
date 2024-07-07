@@ -64,22 +64,22 @@ function Header() {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <img src={linkeding_logo} className="socials_logo" />
+                    <img src={linkeding_logo} className="socials_logo" alt="logo" />
                 </a>
 
                 <a href={info.homepage.socials.github} target="_blank"
                     rel="noopener noreferrer">
-                    <img src={Github_logo} className="socials_logo" />
+                    <img src={Github_logo} className="socials_logo"alt="logo" />
                 </a>
 
                 <a href={info.homepage.socials.email} target="_blank"
                     rel="noopener noreferrer">
-                    <img src={Email_logo_logo} className="socials_logo" />
+                    <img src={Email_logo_logo} className="socials_logo" alt="logo" />
                 </a>
 
                 <a href={info.homepage.socials.whatsup} target="_blank"
                     rel="noopener noreferrer">
-                    <img src={Whatsup_logo} className="socials_logo" />
+                    <img src={Whatsup_logo} className="socials_logo" alt="logo" />
                 </a>
             </div>
             <button className="download_button">
