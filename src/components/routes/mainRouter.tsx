@@ -8,7 +8,6 @@ import './mainRouter.css'
 
 function MainRouter() {
 
-    
 
     return (
         <div className="main_router">
@@ -16,7 +15,7 @@ function MainRouter() {
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/about" element={<AboutPage />} />
-                    <Route path="*" element={<NotFoundPage />} />
+                    <Route path="/Soon" element={<NotFoundPage />} />
                 </Routes>
             </div>
         </div>

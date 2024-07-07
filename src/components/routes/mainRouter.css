@@ -5,7 +5,7 @@
 
     margin: 0;
     padding: 0;
-  
+
     width: 100vw;
     height: 100vh;
 
@@ -13,7 +13,7 @@
 }
 
 .main_router {
-	background-color: white;
+    background-color: white;
 }
 
 .main_router:before,
@@ -28,8 +28,8 @@
 }
 
 .main_router:before {
-	left: 0;
-	z-index: 1;
+    left: 0;
+    z-index: 1;
 }
 
 .main_router:after {
@@ -39,7 +39,20 @@
 
 
 .content_wrapper {
-	width: 50vw;
-	margin: auto;
-	margin-top: 10vh;
+    width: 50vw;
+
+    margin: 25vw;
+
+    margin-top: 10vh;
+
+    /* background-color: black; */
+}
+
+@media (max-width: 1100px) {
+    .content_wrapper {
+        /* margin-top: 20vh; */
+        margin-left: 10vw;
+
+        /* background-color: black; */
+    }
 }
