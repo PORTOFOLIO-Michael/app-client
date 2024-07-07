@@ -5,11 +5,11 @@
 
 
     width: 50vw;
-    height: 100vh;
+    height: 100%;
 
     font-size: 1rem;
     font-family: system-ui;
 
     display: flex;
-
+    flex-direction: column;
 }

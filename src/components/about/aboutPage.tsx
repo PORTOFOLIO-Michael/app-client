@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import loading_gif from '../../resources/Loading_gif.gif'
 
-// import './mainRouter.css'
+import './aboutPage.css'
 
 interface Info {
     about: {
@@ -25,7 +25,7 @@ function AboutPage() {
 
     if (!info) {
         return (
-            <div>
+            <div className="loading_div">
                 <img src={loading_gif} alt="" />
             </div >
         )

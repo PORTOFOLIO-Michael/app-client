@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 import './navBar.css'
 
@@ -7,6 +7,8 @@ import './navBar.css'
 function NavBar() {
 
     // const navigate = useNavigate();
+
+    // navigate('./Soon')
 
     return (
         <div className="navbar_container">
@@ -20,7 +22,7 @@ function NavBar() {
                             <Link to="/about">About</Link>
                         </li>
                         <li>
-                            <Link to="/about">Soon...</Link>
+                            <Link to="/Soon">Soon...</Link>
                         </li>
                     </ul>
                 </div>

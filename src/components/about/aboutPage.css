@@ -1,0 +1,12 @@
+.loading_div {
+    display: block;
+
+}
+
+
+
+@media (max-width: 1100px) {
+    .loading_div img{
+        width: 10vw;
+    }
+}

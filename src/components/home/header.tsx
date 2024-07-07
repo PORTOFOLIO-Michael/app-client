@@ -26,8 +26,12 @@ interface Info {
     };
 }
 
-function Header() {
+
+
+export default function Header() {
     const [info, setInfo] = useState<Info | null>(null);
+
+    
 
     useEffect(() => {
         fetch('./info.json')
@@ -82,6 +86,7 @@ function Header() {
                     <img src={Whatsup_logo} className="socials_logo" alt="logo" />
                 </a>
             </div>
+            
             <button className="download_button">
                 <a href={info.homepage.header.resume}
                     target="_blank" rel="noopener noreferrer"
@@ -94,4 +99,3 @@ function Header() {
     )
 }
 
-export default Header;

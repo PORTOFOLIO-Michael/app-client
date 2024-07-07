@@ -1,17 +1,5 @@
 .App {
-  background-color: #fafafa;
-  
-  position: absolute;
-  text-align: center;
-  background-repeat: no-repeat;
+  position: relative;
+  display: block;
 
-  margin: 0;
-  padding: 0;
-
-  width: 100vw;
-  height: 100vh;
-
-  color: black;
-  font-size: 1rem;
-  font-family: system-ui;
 }
