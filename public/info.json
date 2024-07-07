@@ -1,16 +1,23 @@
 {
-  "header": {
-    "title": "Hi there 👋🏻, Welcome to my portfolio.",
-    "name": "My name is Michael\n I'm a Front-end developer,\n and addicted gamer.",
-    "email": "michael1hoha@gmail.com"
-  },
-  "socials": {
-    "github": "https://github.com/MichaelHoha",
-    "linkedin": "https://www.linkedin.com/in/michael-hohashvili/"
+  "homepage": {
+    "header": {
+      "title": "Hi there 👋🏻, Welcome to my portfolio.",
+      "name": "My name is Michael\n I'm a Front-end developer,\n and addicted gamer.",
+      "summary": "My passion is to frontend and responsive components, clean and architectured.\n  I have experience in building scalable, designed web applications using various technologies.\n Solving problems and learn more skills every day is in my DNA.",
+      "resume": "/Michael-Hohashvili-Resume.pdf"
+    },
+    "socials": {
+      "github": "https://github.com/MichaelHoha",
+      "linkedin": "https://www.linkedin.com/in/michael-hohashvili/",
+      "whatsup": "https://wa.me/972523811258",
+      "email": "mailto:michael1hoha@gmail.com"
+    }
   },
   "about": {
-    "title": "Hi, This is the bout page",
-    "skils": "Here is my skils: React, Redux, etc",
-    "hobbies": "Here some of my hobbies: PC Games, Netflix, Friends etc"
+    "header": {
+      "title": "Hi, This is the about page",
+      "skils": "Here are my skills: React, Redux, etc",
+      "hobbies": "Here are some of my hobbies: PC Games, Netflix, Friends etc"
+    }
   }
 }

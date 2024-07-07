@@ -2,19 +2,28 @@ import React, { useEffect, useState } from "react"
 import profile from '../../resources/Frontend-developer-logo.png'
 import loading_gif from '../../resources/Loading_gif.gif'
 
+import linkeding_logo from '../../resources/linkedin_icon.png'
+import Github_logo from '../../resources/Github_icon.png'
+import Email_logo_logo from '../../resources/Email_icon.png'
+import Whatsup_logo from '../../resources/Whatsup_icon.png'
 
 import './header.css'
 
 interface Info {
-    header: {
-        title: string,
-        name: string,
+    homepage: {
+        header: {
+            title: string,
+            name: string,
+            summary: string,
+            resume: string,
+        };
+        socials: {
+            github: string,
+            linkedin: string,
+            whatsup: string,
+            email: string,
+        };
     };
-
-    socials: {
-        github: string,
-        linkedin: string,
-    }
 }
 
 function Header() {
@@ -27,6 +36,8 @@ function Header() {
             .catch(error => console.error("There was error fetching the DATA: ", error));
     }, []);
 
+    console.log(info);
+
     if (!info) {
         return (
             <div>
@@ -38,22 +49,48 @@ function Header() {
     return (
         <div className="header">
             <span className="header_line"  >
-                {info.header.title} <br />
-                {info.header.name}
+                {info.homepage.header.title} <br />
+                {info.homepage.header.name}
+                <img src={profile} className="profile_image" alt="logo" />
             </span>
-            <img src={profile} className="profile_image" alt="logo" />
-            <h1>
-                <div className="socials_container">
-                    <a href={info.socials.linkedin} target="_blank"
-                        rel="noopener noreferrer">Linkedin</a>
-                    <br />
-                    <a href={info.socials.github} target="_blank"
-                        rel="noopener noreferrer">Github</a>
-                </div>
+            <span className="summary">
+                {info.homepage.header.summary}
+            </span>
 
-            </h1>
+
+            <div className="socials_container">
+                <a
+                    href={info.homepage.socials.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <img src={linkeding_logo} className="socials_logo" />
+                </a>
+
+                <a href={info.homepage.socials.github} target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={Github_logo} className="socials_logo" />
+                </a>
+
+                <a href={info.homepage.socials.email} target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={Email_logo_logo} className="socials_logo" />
+                </a>
+
+                <a href={info.homepage.socials.whatsup} target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={Whatsup_logo} className="socials_logo" />
+                </a>
+            </div>
+            <button className="download_button">
+                <a href={info.homepage.header.resume}
+                    target="_blank" rel="noopener noreferrer"
+                    download="Michael-Hohashvili-Resume.pdf">
+                    Download Resume
+                </a>
+            </button>
+
         </div>
-
     )
 }
 

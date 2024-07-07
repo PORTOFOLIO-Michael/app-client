@@ -1,20 +1,45 @@
 .header {
     position: relative;
     margin-top: 6vw;
-    /* padding: 1%; */
+
     width: 100vw;
-    height: 100vh;
-    /* background-color: black; */
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header_line {
+    color: #27272a;
+
+    text-align: left;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+
+    font-size: calc(1vh + 1.3vw);
+    display: flex;
+
+    transition: 0.5s;
+}
+
+.summary {
+
+    text-align: left;
+    display: flex;
 }
 
 .profile_image {
-    width: 18vw;
-    
-    margin-top: 8vh;
-    
+    position: relative;
+    z-index: 1;
+
+    width: calc(13vw);
+    /* height: calc(12vh); */
+
+    left: 4em;
     border-radius: 1em;
     box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
-    float: right;
+
     transform: rotate(10deg);
     transition: 0.5s;
 }
@@ -23,39 +48,100 @@
     transform: rotate(0deg);
 }
 
-.header_line {
-    position: absolute;
-
-    color: #27272a;;
-    float: left;
-
-    text-align: left;
-
-    white-space: pre-line;
-
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-
-    font-size: calc(1vh + 1.3vw);
-    display: flex;
-
-    /* letter-spacing: 2px; */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-
+.socials_logo {
+    width: 1.8vw;
     transition: 0.5s;
+
+    margin-inline-end: 1em;
 }
 
-.header_line:hover {
-    font-size: calc(1vh + 1.4vw);
+.socials_logo:hover {
+    width: 2vw;
 
+    background-color: #f5deb3;
+
+    border-radius: 0.5em;
 }
 
+.download_button {
+    position: relative;
+    float: left;
+    width: 16vw;
+    cursor: pointer;
+    border-radius: 13px 0 0 0;
+    height: 5vh;
+    background-color: cornsilk;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.download_button:hover {
+    border-color: rgba(0, 0, 0, 0.2);
+    background-color: #f5deb3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download_button a {
+    position: relative;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    color: #3498db;
+    font-size: 1.2em;
+
+    padding: 0.5em 1em;
+    border-radius: 5px;
+
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.download_button a:hover {
+    color: #fff;
+
+    background-color: #3498db;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    transform: translateY(-2px) rotate(3deg);
+}
+
+.header p,
+span {
+    position: relative;
+    white-space: pre-line;
+}
 
 .socials_container {
-    position: absolute;
-    bottom: 0vh;
+    position: relative;
+
+    display: flex;
+
 }
 
-.socials_container a {
-    text-decoration: none;
+
+@media (max-width: 1200px) {
+    .download_button a {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .profile_image {
+        height: calc(11vw);
+    }
+}
+
+@media (max-width: 992px) {
+    .download_button a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .download_button a {
+        font-size: 0.8rem;
+    }
 }
