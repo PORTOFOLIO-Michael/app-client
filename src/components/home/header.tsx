@@ -31,7 +31,7 @@ interface Info {
 export default function Header() {
     const [info, setInfo] = useState<Info | null>(null);
 
-    
+
 
     useEffect(() => {
         fetch('./info.json')
@@ -73,7 +73,7 @@ export default function Header() {
 
                 <a href={info.homepage.socials.github} target="_blank"
                     rel="noopener noreferrer">
-                    <img src={Github_logo} className="socials_logo"alt="logo" />
+                    <img src={Github_logo} className="socials_logo" alt="logo" />
                 </a>
 
                 <a href={info.homepage.socials.email} target="_blank"
@@ -86,9 +86,10 @@ export default function Header() {
                     <img src={Whatsup_logo} className="socials_logo" alt="logo" />
                 </a>
             </div>
-            
+
             <button className="download_button">
                 <a href={info.homepage.header.resume}
+                    className="resume_a_tag"
                     target="_blank" rel="noopener noreferrer"
                     download="Michael-Hohashvili-Resume.pdf">
                     Download Resume

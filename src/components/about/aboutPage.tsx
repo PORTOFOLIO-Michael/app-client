@@ -7,8 +7,9 @@ interface Info {
     about: {
         header: {
             title: string,
+            summary: string,
             skils: string,
-            hobbies: string
+            hobbies: string,
         }
     }
 }
@@ -33,17 +34,24 @@ function AboutPage() {
 
     return (
         <div className="main_about">
-            <div>
-                <h1>
-                    {info.about.header.title}
-                </h1>
-            </div>
-            <body>
+            <div className="about_header">
                 <span>
-                    {info.about.header.skils} <br />
-                    {info.about.header.hobbies}
+                    {info.about.header.title}
                 </span>
-            </body>
+            </div>
+
+            <div className="about_body">
+                <p className="about_summary_p">About Me</p> <br />
+                <span className="about_summary">
+                    {info.about.header.summary}
+                </span>
+                <span className="skills_hobbies">
+                    <ul>
+                        <li> {info.about.header.skils}</li>
+                        <li> {info.about.header.hobbies}</li>
+                    </ul>
+                </span>
+            </div>
         </div>
     )
 }
