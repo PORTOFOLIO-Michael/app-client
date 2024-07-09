@@ -17,7 +17,6 @@
 
     background-color: rgb(219, 219, 219);
 
-
 }
 
 .timeline_title {
@@ -35,7 +34,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: 0.3s, transform 0.3s;
     text-align: left;
-    
+
     font-size: 0.9vw;
 
     margin-top: 1vh;
@@ -47,4 +46,17 @@
 .time_line:hover {
     background: #e0e0e0;
     transform: translateY(-2px);
+}
+
+
+@media (max-width: 768px) {
+    .time_line {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .time_line {
+        font-size: 4vw;
+    }
 }
