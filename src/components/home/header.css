@@ -69,6 +69,9 @@
 
 .download_button {
     position: relative;
+    align-items: center;
+    justify-content: center;
+
     float: left;
     width: 16vw;
     cursor: pointer;
@@ -87,19 +90,19 @@
 
 .download_button a {
     position: relative;
-
     text-decoration: none;
     font-weight: bold;
-
     color: #3498db;
-    font-size: 1.2em;
-
-    padding: 0.5em 1em;
     border-radius: 5px;
-
     transition: 0.3s;
     display: inline-block;
 }
+
+.resume_a_tag {
+    font-size: calc(10px + 1vw);
+    
+}
+
 
 .download_button a:hover {
     color: #fff;
