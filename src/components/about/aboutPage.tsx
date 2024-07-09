@@ -9,6 +9,7 @@ interface Info {
             title: string,
             summary: string,
             skils: string,
+            education: string,
             hobbies: string,
         }
     }
@@ -48,6 +49,7 @@ function AboutPage() {
                 <span className="skills_hobbies">
                     <ul>
                         <li> {info.about.header.skils}</li>
+                        <li> {info.about.header.education}</li>
                         <li> {info.about.header.hobbies}</li>
                     </ul>
                 </span>
