@@ -76,13 +76,13 @@
 
 @media (max-width: 1200px) {
     .navbar_container a {
-        font-size: 1.8vw;
+        font-size: 7vw;
     }
 }
 
 @media (max-width: 1100px) {
     .nav_background {
-        width: 13vw;
+        width: 15vw;
     }
 }
 
