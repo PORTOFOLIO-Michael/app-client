@@ -141,9 +141,9 @@ span {
         flex-direction: column;
 
     }
- 
+
     .summary {
-        font-size: 3vw;
+        font-size: 1.5vw;
     }
 
 }
@@ -151,9 +151,8 @@ span {
 
 @media (max-width: 1200px) {
     .download_button a {
-        font-size: 1.1rem;
+        font-size: 1.1vw;
     }
-
 }
 
 @media (max-width: 1100px) {
@@ -164,13 +163,13 @@ span {
 
 @media (max-width: 992px) {
     .download_button a {
-        font-size: 0.9rem;
+        font-size: 0.9vw;
     }
 }
 
 @media (max-width: 576px) {
     .download_button a {
-        font-size: 0.8rem;
+        font-size: 2.5vw;
     }
 }
 
@@ -189,6 +188,7 @@ span {
     .socials_logo {
         width: 10vw;
     }
+
     .header_line {
         font-size: 4vw;
     }

@@ -31,8 +31,6 @@ interface Info {
 export default function Header() {
     const [info, setInfo] = useState<Info | null>(null);
 
-
-
     useEffect(() => {
         fetch('./info.json')
             .then(response => response.json())
