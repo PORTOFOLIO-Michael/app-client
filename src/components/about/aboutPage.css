@@ -25,6 +25,16 @@
 
 }
 
+.about_body{
+    position: relative;
+
+}
+
+.about_body ul {
+    position: absolute;
+
+}
+
 .about_body li {
     background: #f0f0f0;
     margin: 10px 0;
