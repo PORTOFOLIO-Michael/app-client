@@ -15,7 +15,7 @@ export default function HomePageBody() {
             <div className="time_line">
                 B.Sc. in Computer science at Afeka Academic College of Engineering: 2021 - 2024
             </div>
-
+            
             <div className="time_line">Front-end developer course at SVCollege , Tel - Aviv: 2019 - 2020</div>
 
             <div className="time_line">
