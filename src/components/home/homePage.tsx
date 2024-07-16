@@ -9,7 +9,9 @@ function HomePage() {
     return (
         <div className="home_page">
             <Header />
+            
             <Body />
+
         </div>
     )
 }
