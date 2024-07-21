@@ -89,7 +89,7 @@ export default function Header() {
                 <a href={info.homepage.header.resume}
                     className="resume_a_tag"
                     target="_blank" rel="noopener noreferrer"
-                    download="Michael-Hohashvili-Resume.pdf">
+                    download="Michael-Hohashvili-Resume.docx">
                     Download Resume
                 </a>
             </button>
