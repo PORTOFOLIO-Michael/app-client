@@ -19,7 +19,7 @@ export default function HomePageBody() {
             <div className="time_line">Front-end developer course at SVCollege , Tel - Aviv: 2019 - 2020</div>
 
             <div className="time_line">
-                MILITARY SERVE - Three years of service in a special unit in the Givati Brigade: 2013 - 2016
+                MILITARY SERVICE - Three years of service in a special unit in the Givati Brigade: 2013 - 2016
             </div>
         </div>
     )
