@@ -44,6 +44,9 @@
     transition: 0.3s, transform 0.3s;
     text-align: left;
     font-size: 0.9vw;
+
+    cursor: url('../../resources/smiley.png'), auto;
+
 }
 
 .about_body li:hover {

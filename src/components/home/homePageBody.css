@@ -40,6 +40,8 @@
     margin-top: 1vh;
     text-align: left;
 
+    cursor: url('../../resources/smiley.png'), auto;
+
     display: flex;
 }
 
