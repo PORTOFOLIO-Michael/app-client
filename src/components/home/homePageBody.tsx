@@ -10,7 +10,7 @@ export default function HomePageBody() {
 
             <div className="time_line">
                 Full-stack: AML - a final project for my BSc in Computer Science, showcasing practical application of my academic 
-                knowledge. Afeka, Tel Aviv: 2022 - 2024
+                knowledge. Afeka, Tel Aviv: 2024
             </div>
 
             <div className="time_line">
