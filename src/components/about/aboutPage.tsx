@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import axios from 'axios';
 import loading_gif from '../../resources/Loading_gif.gif'
 
 import './aboutPage.css'
@@ -8,7 +9,7 @@ interface Info {
         header: {
             title: string,
             summary: string,
-            skils: string,
+            skills: string,
             education: string,
             hobbies: string,
         }
@@ -19,11 +20,19 @@ function AboutPage() {
     const [info, setInfo] = useState<Info | null>(null);
 
     useEffect(() => {
-        fetch('./info.json')
-            .then(response => response.json())
-            .then(data => setInfo(data))
-            .catch(error => console.error('Error fetching data:', error));
-    }, []);
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('./info.json');
+
+                setInfo(response.data);
+                console.log("Fetching data...");
+            } catch (error) {
+                console.log("Error fetching the data");
+            }
+        }
+
+        fetchData();
+    }, [])
 
     if (!info) {
         return (
@@ -48,7 +57,7 @@ function AboutPage() {
                 </span>
 
                 <ul>
-                    <li> {info.about.header.skils}</li>
+                    <li> {info.about.header.skills}</li>
                     <li> {info.about.header.education}</li>
                     <li> {info.about.header.hobbies}</li>
                 </ul>

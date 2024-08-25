@@ -19,9 +19,10 @@ export default function Projects() {
     }, []);
 
     return (
+        <div className='projects_container'>
 
-        <div>
-            <h1>{projects?.name}</h1>
+            <h1 className='projects_title'>Projects</h1>
+            <span>{projects?.name}</span>
             <span>{projects?.website}</span>
 
         </div>

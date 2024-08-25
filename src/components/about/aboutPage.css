@@ -10,17 +10,17 @@
 }
 
 .about_summary {
-    font-size: 0.9vw;
+    /* font-size: 0.9vw; */
 }
 
 .about_summary_p {
     font-weight: bold;
-    font-size: 0.8vw;
+    /* font-size: 0.8vw; */
 
 }
 
 .about_header span {
-    font-size: 2vw;
+    /* font-size: 2vw; */
     font-weight: bold;
 
 }
@@ -43,9 +43,8 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: 0.3s, transform 0.3s;
     text-align: left;
-    font-size: 0.9vw;
+    /* font-size: 0.9vw; */
 
-    cursor: url('../../resources/smiley.png'), auto;
 
 }
 
@@ -58,7 +57,7 @@
     float: left;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .about_body li {
         font-size: 2.5vw;
     }
@@ -74,4 +73,4 @@
     .loading_div img {
         width: 10vw;
     }
-}
+} */

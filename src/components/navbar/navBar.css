@@ -38,7 +38,7 @@
 
     font-weight: 500;
 
-    font-size: 0.8vw;
+    /* font-size: 0.8vw; */
 
     color: #27272a;
 }
@@ -60,7 +60,7 @@
     padding-inline: 2em;
     padding-block: 0.3em;
 
-    width: 13vw;
+    /* width: 13vw; */
 
     background: #fff;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
@@ -70,10 +70,11 @@
 }
 
 .nav_background:hover {
-    width: 10vw;
+    /* width: 10vw; */
     box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* 
 @media (max-width: 1400px) {
     .navbar_container a {
         font-size: 1.5vw;
@@ -97,43 +98,4 @@
         width: 15vw;
     }
 }
-
-
-/* 
-.nav-item {
-	font-weight: bold;
-	font-size: 80%;
-}
-
-.nav-item.active a {
-	color: var(--link-color) !important;
-}
-
-.nav-item a {
-	text-decoration: none;
-	color: var(--primary-color);
-}
-
-.nav-item a:hover {
-	color: var(--link-color);
-	transition: color 0.3s ease-in-out;
-}
-
-@media (max-width: 600px) {
-	.navbar {
-		margin-left: 25%;
-		margin-right: 25%;
-		width: 80%;
-		font-size: 80%;
-	}
-
-	.nav-background {
-		width: 80%;
-        
-		height: 40px;
-	}
-
-	.nav-item {
-		font-weight: bold;
-	}
-} */
+ */

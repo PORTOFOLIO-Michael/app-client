@@ -1,9 +1,9 @@
 {
   "homepage": {
     "header": {
-      "title": "Hi there👋🏻,",
-      "name": "I'm Michael,\nFront-end developer.",
-      "summary": "My passion is to Front-end and responsive components, clean and architectured.\n  I have experience in building scalable, designed web applications using various\n technologies. Solving problems and learn more skills every day is in my DNA.\n I'm open-minded and interested in exploring various job opportunities.\n opportunities where I can express myself and contribute to innovative projects.",
+      "title": "Hello 👋🏻",
+      "name": "I'm Michael\nFull-stack developer.",
+      "summary": "My passion is to Front-end and responsive components, clean and architectured.\n I have experience in building scalable, designed web applications using various technologies.\n Solving problems and learn more skills every day is in my DNA.\n I'm open-minded and interested in exploring various job opportunities.\n Opportunities where I can express myself and contribute to innovative projects.",
       "resume": "/Michael Hohashvili - Resume.pdf"
     },
     "socials": {
@@ -11,13 +11,35 @@
       "linkedin": "https://www.linkedin.com/in/michael-hohashvili/",
       "whatsup": "https://wa.me/972523811258",
       "email": "mailto:michael1hoha@gmail.com"
+    },
+    "projects": {
+      "project1": {
+        "name": "Clip Cloud",
+        "github": "https://github.com/clip-cloud",
+        "linkToProject": "http://34.255.196.211:3000/",
+        "technologies": {
+          "Front": "React: Axios, Routes, Hooks, CSS, Dropzone library",
+          "Back": "Node: Express, MongoDB(mongoose), ffmpeg",
+          "additional": "AWS host machine"
+        }
+      },
+      "project2": {
+        "name": "Portfolio",
+        "github": "https://github.com/PORTOFOLIO-Michael/app-client",
+        "linkToProject": "https://michaelhoha.netlify.app/",
+        "technologies": {
+          "Front": "React: Typescript, Axios, Routes, Hooks, CSS,",
+          "Back": "JSON",
+          "additional": "Host on Netlify"
+        }
+      }
     }
   },
   "about": {
     "header": {
       "title": "Hello, here are some of details about myself.",
       "summary": "Hi, I'm Michael, a 29-year-old computer science graduate with a passion for front-end development and a touch of back-end experience. I love styling websites and components, believing that front-end development is where creativity and open-mindedness truly shine. It's fascinating how something that looks great in design tools like Figma or Zeplin can differ once it's on a user's display, and I enjoy navigating these challenges to create beautiful, functional interfaces. In my free time, I love watching movies, playing PC games, meeting friends, and reading books. Now that I've completed my degree, I have more time to indulge in these hobbies. While I have a strong passion for front-end development, I'm open-minded and interested in exploring various job opportunities. opportunities where I can express myself and contribute to innovative projects.",
-      "skils": "Skills - React, Redux, Routers, Hooks, Type Script.",
+      "skills": "Skills - React, Redux, Routers, Hooks, Type Script.",
       "education": "Education - Bsc in computer, OOP, C, Linux, Python and SQL.",
       "hobbies": "Hobbies - PC Games, Netflix, Friends, Books."
     }

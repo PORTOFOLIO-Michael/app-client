@@ -1,26 +1,29 @@
 .body_container {
+    position: relative;
     display: flex;
     flex-direction: column;
 
-    margin-top: 8vh;
-    margin-bottom: 10vh;
+    margin-top: 2em;
 
+    animation: slideIn 0.5s ease-in-out;
 }
 
 .body_container::before {
+    position: relative;
     content: '';
 
     margin-bottom: 3vh;
 
-    width: 50vw;
+    width: 100%;
     height: 2px;
 
     background-color: rgb(219, 219, 219);
+    animation: slideIn 1s ease-in-out;
 
 }
 
 .timeline_title {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     font-weight: 500;
     text-align: left;
     color: gray;
@@ -35,12 +38,11 @@
     transition: 0.3s, transform 0.3s;
     text-align: left;
 
-    font-size: 0.9vw;
+    /* font-size: 0.9vw; */
 
     margin-top: 1vh;
     text-align: left;
 
-    cursor: url('../../resources/smiley.png'), auto;
 
     display: flex;
 }
@@ -51,7 +53,7 @@
 }
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .time_line {
         font-size: 2.5vw;
     }
@@ -60,5 +62,16 @@
 @media (max-width: 480px) {
     .time_line {
         font-size: 4vw;
+    }
+} */
+
+@keyframes slideIn {
+    from {
+        left: -100%;
+        color: transparent;
+    }
+
+    to {
+        left: 0;
     }
 }
