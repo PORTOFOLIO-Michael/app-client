@@ -46,13 +46,13 @@ function AboutPage() {
                 <span className="about_summary">
                     {info.about.header.summary}
                 </span>
-                
-                    <ul>
-                        <li> {info.about.header.skils}</li>
-                        <li> {info.about.header.education}</li>
-                        <li> {info.about.header.hobbies}</li>
-                    </ul>
-                
+
+                <ul>
+                    <li> {info.about.header.skils}</li>
+                    <li> {info.about.header.education}</li>
+                    <li> {info.about.header.hobbies}</li>
+                </ul>
+
             </div>
         </div>
     )
