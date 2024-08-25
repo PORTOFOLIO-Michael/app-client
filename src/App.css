@@ -1,5 +1,9 @@
 .App {
   position: relative;
-  display: block;
+  display: grid;
+  
+/* 
+  text-align: center;
+  justify-content: center; */
 
 }

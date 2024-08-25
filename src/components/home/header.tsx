@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import profile from '../../resources/Frontend-developer-logo.png'
 import loading_gif from '../../resources/Loading_gif.gif'
 
 import linkeding_logo from '../../resources/linkedin_icon.png'

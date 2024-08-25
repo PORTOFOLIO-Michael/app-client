@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "./header";
 import Body from "./homePageBody";
+import Projects from "components/projects/projects";
 
 import './homePage.css'
-import Projects from "components/projects/projects";
 
 function HomePage() {
 

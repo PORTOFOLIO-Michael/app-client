@@ -13,6 +13,13 @@
     display: flex;
     flex-direction: column;
 
+}
 
-    
+
+@media (max-width: 1000px) {
+    .home_page {
+
+        width: 100%;
+
+    }
 }
