@@ -74,6 +74,12 @@
     box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 1100px) {
+    .nav_background {
+        box-shadow: 5px 0px 20px 10px rgba(0, 0, 0, 0.1)
+    }
+}
+
 /* 
 @media (max-width: 1400px) {
     .navbar_container a {
@@ -93,9 +99,5 @@
     }
 }
 
-@media (max-width: 1100px) {
-    .nav_background {
-        width: 15vw;
-    }
-}
+
  */

@@ -30,8 +30,15 @@
 }
 
 @media (max-width: 1100px) {
-    /* .content_wrapper {
-        margin-left: 10vw;
 
-    } */
+
+
+    .content_wrapper {
+        box-shadow: -20px -20px 20px 20px rgba(0, 0, 0, 0.1);
+        position: relative;
+        display: grid;
+        margin-top: 6em;
+        padding-inline: 1em;
+    }
+
 }
