@@ -34,7 +34,7 @@ export default function Projects() {
     return (
         <div className='projects_container'>
 
-            <h1 className='projects_title'>Projects</h1>
+            <h1 className='projects_title'>{projects?.name}</h1>
             {/* <span>{projects?.name}</span>
             <span>{projects?.github}</span>
             <span>{projects?.linkToProject}</span>
