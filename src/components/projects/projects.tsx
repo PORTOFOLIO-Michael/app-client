@@ -27,22 +27,22 @@ interface ProjectData {
 
 export default function Projects() {
 
-    const [projectData, setProjectData] = useState<ProjectData | null>(null);
+    // const [projectData, setProjectData] = useState<ProjectData | null>(null);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await axios.get('./info.json');
-                setProjectData(response.data);
-                console.log("data:", response.data);
-                console.log("Fetching data...");
-            } catch (error) {
-                console.log("Erro on fetching data");
-            }
-        }
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         try {
+    //             const response = await axios.get('./info.json');
+    //             setProjectData(response.data);
+    //             console.log("data:", response.data);
+    //             console.log("Fetching data...");
+    //         } catch (error) {
+    //             console.log("Erro on fetching data");
+    //         }
+    //     }
 
-        fetchData();
-    }, []);
+    //     fetchData();
+    // }, []);
 
     return (
         <div className='projects_container'>
