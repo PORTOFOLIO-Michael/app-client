@@ -12,16 +12,32 @@
       "whatsup": "https://wa.me/972523811258",
       "email": "mailto:michael1hoha@gmail.com"
     },
-    "projects": {
-      "name": "Clip Cloud",
-      "github": "https://github.com/clip-cloud",
-      "linkToProject": "http://34.255.196.211:3000/",
-      "technologies": {
-        "front": "React: Axios, Routes, Hooks, CSS, Dropzone library",
-        "back": "Node: Express, MongoDB(mongoose), ffmpeg",
-        "additional": "AWS host machine"
+    "projects": [
+      {
+        "name": "Clip Cloud",
+        "github": "https://github.com/clip-cloud",
+        "linkToProject": "http://34.255.196.211:3000/",
+        "technologies": {
+          "front": "React: Axios, Routes, Hooks, CSS, Dropzone library",
+          "back": "Node: Express, MongoDB(mongoose), ffmpeg",
+          "additional": "AWS host machine"
+        },
+        "backgroundImages": [
+        ]
+      },
+      {
+        "name": "Portfolio",
+        "github": "https://github.com/PORTOFOLIO-Michael/app-client",
+        "linkToProject": "https://michaelhoha.netlify.app/",
+        "technologies": {
+          "front": "React: Redux, Styled-components",
+          "back": "Node: Express, PostgreSQL",
+          "additional": "Netlify host"
+        },
+        "backgroundImages": [
+        ]
       }
-    }
+    ]
   },
   "about": {
     "header": {

@@ -1,4 +1,56 @@
 .projects_container {
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    align-items: stretch;
 
-    
+    width: 66em;
+}
+
+.project {
+    display: grid;
+    flex: 2 1 30%;
+    overflow: hidden;
+
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: transparent;
+    border: 1px transparent #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    text-align: left;
+
+    padding: 0;
+}
+
+.project:hover {
+    background-color: #fafafa;
+    transform: scale(1.05);
+}
+
+.project-background {
+    width: 2em;
+    /* Adjust the width to fit your needs */
+    height: auto;
+    /* Adjust the height or set a fixed height */
+    margin-bottom: 10px;
+    /* Add space between images if needed */
+    border-radius: 8px;
+    /* Match your design preferences */
+}
+
+
+
+@media (max-width: 1000px) {
+    .projects_container {
+        width: 100%;
+
+    }
+
+    .project {
+        background-color: rgb(205, 205, 205);
+
+
+    }
 }

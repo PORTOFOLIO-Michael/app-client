@@ -1,27 +1,40 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import AWS_logo from '../../logosResources/AWSlogo.png'
+import React_logo from '../../logosResources/Reactlogo.png'
+import TS_logo from '../../logosResources/Typescriptlogo.png'
 
+import './projects.css'
 
 interface Project {
     name: string;
     github: string;
-    linkToProject: string,
+    linkToProject: string;
     technologies: {
-        front: string,
-        back: string,
-        additional: string,
-    }
+        front: string;
+        back: string;
+        additional: string;
+    };
+    backgroundImages: string[];
 }
+
+interface ProjectData {
+    homepage: {
+        projects: Project[];
+    };
+}
+
 
 export default function Projects() {
 
-    const [projects, setProjects] = useState<Project | null>(null);
+    const [projectData, setProjectData] = useState<ProjectData | null>(null);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await axios.get('./info.json');
-                setProjects(response.data);
+                setProjectData(response.data);
+                console.log("data:", response.data);
                 console.log("Fetching data...");
             } catch (error) {
                 console.log("Erro on fetching data");
@@ -33,14 +46,35 @@ export default function Projects() {
 
     return (
         <div className='projects_container'>
+            <div className='project'>
+                <div>
 
-            <h1 className='projects_title'>{projects?.name}</h1>
-            {/* <span>{projects?.name}</span>
-            <span>{projects?.github}</span>
-            <span>{projects?.linkToProject}</span>
-            <span>{projects?.technologies.front}</span>
-            <span>{projects?.technologies.back}</span>
-            <span>{projects?.technologies.additional}</span> */}
+                    <img
+                        src={AWS_logo}
+                        alt={'AWS_logo'}
+                        className="project-background"
+                    />
+                    <img
+                        src={React_logo}
+                        alt={'REACT_logo'}
+                        className="project-background"
+                    />
+                </div>
+                <span>Clip Cloud</span>
+                <a href='https://github.com/clip-cloud'>repository</a>
+                <a href='http://34.255.196.211:3000/'>try it youself</a>
+            </div>
+
+            <div className='project'>
+                <img
+                    src={TS_logo}
+                    alt={'TS_logo'}
+                    className="project-background"
+                />
+                <span>Portfolio</span>
+                <a href='https://github.com/clip-cloud'>repository</a>
+                <a href='http://34.255.196.211:3000/'>try it youself</a>
+            </div>
 
         </div>
     )

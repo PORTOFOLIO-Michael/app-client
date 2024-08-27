@@ -186,7 +186,7 @@ span {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
     .header_line {
         font-size: 3em;
     }

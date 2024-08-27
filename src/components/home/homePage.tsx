@@ -11,10 +11,9 @@ function HomePage() {
         <div className="home_page">
             <Header />
 
-            <Body />
-
             <Projects />
 
+            <Body />
         </div>
     )
 }
