@@ -1,8 +1,8 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import AWS_logo from '../../logosResources/AWSlogo.png'
 import React_logo from '../../logosResources/Reactlogo.png'
 import TS_logo from '../../logosResources/Typescriptlogo.png'
+import Axios_logo from '../../logosResources/Axioslogo.png'
 
 import './projects.css'
 
@@ -27,23 +27,6 @@ interface ProjectData {
 
 export default function Projects() {
 
-    // const [projectData, setProjectData] = useState<ProjectData | null>(null);
-
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         try {
-    //             const response = await axios.get('./info.json');
-    //             setProjectData(response.data);
-    //             console.log("data:", response.data);
-    //             console.log("Fetching data...");
-    //         } catch (error) {
-    //             console.log("Erro on fetching data");
-    //         }
-    //     }
-
-    //     fetchData();
-    // }, []);
-
     return (
         <div className='projects_container'>
             <div className='project'>
@@ -60,20 +43,28 @@ export default function Projects() {
                         className="project-background"
                     />
                 </div>
-                <span>Clip Cloud</span>
-                <a href='https://github.com/clip-cloud'>repository</a>
-                <a href='http://34.255.196.211:3000/'>try it youself</a>
+                <span className='project_title'>Clip Cloud</span>
+                <a href='https://github.com/clip-cloud'>Repository</a>
+                <a href='http://34.255.196.211:3000/'>Try it youself</a>
             </div>
 
             <div className='project'>
-                <img
-                    src={TS_logo}
-                    alt={'TS_logo'}
-                    className="project-background"
-                />
-                <span>Portfolio</span>
-                <a href='https://github.com/clip-cloud'>repository</a>
-                <a href='http://34.255.196.211:3000/'>try it youself</a>
+                <div>
+
+                    <img
+                        src={TS_logo}
+                        alt={'TS_logo'}
+                        className="project-background"
+                    />
+                    <img
+                        src={Axios_logo}
+                        alt={'Axios_logo'}
+                        className="project-background"
+                    />
+                </div>
+                <span className='project_title'>Portfolio</span>
+                <a href='https://github.com/clip-cloud'>Repository</a>
+                <a href='http://34.255.196.211:3000/'>Try it youself</a>
             </div>
 
         </div>
