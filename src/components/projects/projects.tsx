@@ -6,23 +6,23 @@ import Axios_logo from '../../logosResources/Axioslogo.png'
 
 import './projects.css'
 
-interface Project {
-    name: string;
-    github: string;
-    linkToProject: string;
-    technologies: {
-        front: string;
-        back: string;
-        additional: string;
-    };
-    backgroundImages: string[];
-}
+// interface Project {
+//     name: string;
+//     github: string;
+//     linkToProject: string;
+//     technologies: {
+//         front: string;
+//         back: string;
+//         additional: string;
+//     };
+//     backgroundImages: string[];
+// }
 
-interface ProjectData {
-    homepage: {
-        projects: Project[];
-    };
-}
+// interface ProjectData {
+//     homepage: {
+//         projects: Project[];
+//     };
+// }
 
 
 export default function Projects() {
