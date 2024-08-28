@@ -53,17 +53,11 @@
 }
 
 
-/* @media (max-width: 768px) {
-    .time_line {
-        font-size: 2.5vw;
+@media (max-width: 768px) {
+    .timeline_title {
+        font-size: 2em;
     }
 }
-
-@media (max-width: 480px) {
-    .time_line {
-        font-size: 4vw;
-    }
-} */
 
 @keyframes slideIn {
     from {

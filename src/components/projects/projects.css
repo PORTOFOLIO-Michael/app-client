@@ -14,7 +14,7 @@
     flex: 2 1 30%;
     overflow: hidden;
 
-    cursor: pointer;
+    cursor: default;
     box-sizing: border-box;
     margin: 10px;
     background-color: transparent;
@@ -23,12 +23,24 @@
     transition: transform 0.3s;
     text-align: left;
 
-    padding: 0;
+    padding: 0.5em;
 }
 
 .project_title {
     color: #65656d;
     font-weight: 500;
+}
+
+.project_links {
+    margin-top: 1em;
+    font-family: system-ui;
+    color: #65656d;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.project_links:hover {
+    color: #07c0d5;
 }
 
 .project:hover {
@@ -37,17 +49,18 @@
 }
 
 .project-background {
-    width: 2em;
-    /* Adjust the width to fit your needs */
+    width: 2.5em;
     height: auto;
-    /* Adjust the height or set a fixed height */
-    margin-bottom: 10px;
-    /* Add space between images if needed */
-    border-radius: 8px;
-    /* Match your design preferences */
+    
+    margin-right: 1em;
+    margin-bottom: 1em;
 }
 
-
+.technologies_image_sections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 @media (max-width: 1000px) {
     .projects_container {
@@ -57,7 +70,7 @@
 
     .project {
         background-color: rgb(226, 225, 225);
-
+        padding: 0.5em;
 
     }
 }

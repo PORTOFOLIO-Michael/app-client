@@ -41,6 +41,12 @@
     /* font-size: 0.8vw; */
 
     color: #27272a;
+    
+    animation: sizeIn 0.5s ease-in-out;
+}
+
+.navbar_container a:hover {
+    color: #14bed4;
 }
 
 .navbar {
@@ -77,6 +83,17 @@
 @media (max-width: 1100px) {
     .nav_background {
         box-shadow: 5px 0px 20px 10px rgba(0, 0, 0, 0.1)
+    }
+}
+
+@keyframes sizeIn {
+    from {
+        font-size: 100em;
+        color: transparent;
+    }
+
+    to {
+        font-size: 0;
     }
 }
 
