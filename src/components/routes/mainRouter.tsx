@@ -14,8 +14,8 @@ function MainRouter() {
             <div className="content_wrapper">
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/about" element={<AboutPage />} />
                     <Route path="/resume" element={<Resume />} />
+                    <Route path="/about" element={<AboutPage />} />
                 </Routes>
             </div>
         </div>

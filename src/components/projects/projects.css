@@ -26,6 +26,12 @@
     padding: 0.5em;
 }
 
+.project_title_icon_link {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .project_title {
     color: #65656d;
     font-weight: 500;
@@ -51,9 +57,8 @@
 .project-background {
     width: 2.5em;
     height: auto;
-    
+
     margin-right: 1em;
-    margin-bottom: 1em;
 }
 
 .technologies_image_sections {
@@ -63,12 +68,12 @@
 @media (max-width: 1000px) {
     .projects_container {
         width: 100%;
-
     }
 
     .project {
         background-color: rgb(226, 225, 225);
         padding: 0.5em;
-
+        width: -webkit-fill-available;
+        flex: none;
     }
 }
