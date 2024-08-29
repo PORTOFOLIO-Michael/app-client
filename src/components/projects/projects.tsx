@@ -68,14 +68,16 @@ export default function Projects() {
                         className="project-background"
                     />
                 </div>
-                <span className='project_title'>Clip Cloud</span>
-                <img
-                    src={Clipcloud_logo}
-                    alt={'Clipcloud_logo'}
-                    className="project-background"
-                />
-                <a className='project_links' href='http://34.255.196.211:3000/'>Try it youself</a>
-                <a className='project_links' href='https://github.com/clip-cloud'>Repository</a>
+                <div>
+                    <span className='project_title'>Clip Cloud</span>
+                    <img
+                        src={Clipcloud_logo}
+                        alt={'Clipcloud_logo'}
+                        className="project-background"
+                    />
+                    <a className='project_links' href='http://34.255.196.211:3000/'>Try it youself</a>
+                    <a className='project_links' href='https://github.com/clip-cloud'>Repository</a>
+                </div>
             </div>
 
             <div className='project'>
@@ -91,16 +93,17 @@ export default function Projects() {
                         className="project-background"
                     />
                 </div>
-                <span className='project_title'>Portfolio</span>
-                <img
-
-                    style={{ backgroundColor: 'transparent' }}
-                    src={Portfolio_logo}
-                    alt={'Portfolio_logo'}
-                    className="project-background"
-                />
-                <a className='project_links' href='https://michaelhoha.netlify.app/'>Try it youself</a>
-                <a className='project_links' href='https://github.com/PORTOFOLIO-Michael'>Repository</a>
+                <div>
+                    <span className='project_title'>Portfolio</span>
+                    <img
+                        style={{ backgroundColor: 'transparent' }}
+                        src={Portfolio_logo}
+                        alt={'Portfolio_logo'}
+                        className="project-background"
+                    />
+                    <a className='project_links' href='https://michaelhoha.netlify.app/'>Try it youself</a>
+                    <a className='project_links' href='https://github.com/PORTOFOLIO-Michael'>Repository</a>
+                </div>
             </div>
 
         </div>

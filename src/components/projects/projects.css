@@ -57,9 +57,7 @@
 }
 
 .technologies_image_sections {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 @media (max-width: 1000px) {
