@@ -6,7 +6,7 @@ export default function HomePageBody() {
 
     return (
         <div className="body_container">
-            <span className="timeline_title">My Timeline</span>
+            <span className="timeline_title">Career path</span>
 
             <div className="time_line">
                 Full-stack: AML - a final project for my BSc in Computer Science, showcasing practical application of my academic 
