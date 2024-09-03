@@ -1,0 +1,69 @@
+.personal_info {
+    /* display: flex; */
+    /* align-items: center; */
+    margin-top: 2em;
+}
+
+.botton_div {
+    width: max-content;
+}
+
+.download_button {
+    margin-top: 1em;
+}
+
+.resume_header span,
+a {
+    color: black;
+}
+
+.software_title {
+    font-size: 1.5em;
+}
+
+.resume_title {
+    font-size: 3em;
+}
+
+.resume_body {
+    text-align: left;
+}
+
+
+.personal_info a {
+    text-decoration: none;
+}
+
+.personal_info a:hover {
+    background-color: rgb(216, 202, 184);
+}
+
+.separator {
+    margin: 2em
+}
+
+
+@media (max-width: 600px) {
+    .resume_title {
+        font-size: 2em;
+    }
+
+    .separator {
+        margin: 1em;
+    }
+
+    .software_title {
+        font-size: 1.2em;
+    }
+
+    .botton_div {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .download_button {
+        width: 100%;
+        height: 4em;
+    }
+
+}
