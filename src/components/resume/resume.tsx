@@ -82,7 +82,7 @@ function Resume() {
       <div className='resume_body'>
 
         <h2>SUMMARY</h2>
-        <span>Highly motivated Computer Science graduate with two years of Full-stack development experience, specializing in React.js, <br />
+        <span>Highly motivated Computer Science graduate with a Full-stack development experience, specializing in React.js, <br />
           Hooks, and Redux. Developed a comprehensive AI application for detecting intestinal inflammation, creating a Python <br />
           algorithm for enhanced functionality. Actively seeking opportunities in Front-end, Full-stack, and other development roles. <br />
           Strong communication skills and a team-oriented approach.
