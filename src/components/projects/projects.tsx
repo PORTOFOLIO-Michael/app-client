@@ -81,7 +81,7 @@ export default function Projects() {
                     </div>
                     <span className='project_links'>
                         Clip Cloud is a user-friendly platform where you can upload videos, trim them to your liking, and explore your personal gallery to view all your uploads.                    </span>
-                    <a className='project_links' href='http://34.255.196.211:3000/'>Try it youself</a>
+                    <a className='project_links' href='https://clip-cloud.netlify.app/'>Try it youself</a>
                     <a className='project_links' href='https://github.com/clip-cloud'>Repository</a>
                 </div>
 
